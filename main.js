@@ -40,12 +40,21 @@ let sceltaUtente = prompt ('Preferisci pari o dispari?');
 
 if (sceltaUtente !== 'pari' && sceltaUtente !== 'dispari') {
     alert ('scegli un valore valido');
-    location.reload();
 }
 let numeroUtente = Number (prompt ('Scegli un numero compreso tra 1 e 5'));
 
 if (numeroUtente < 1 || numeroUtente > 5) {
     alert ('scegli un valore valido');
-    location.reload();
 } 
 
+let numeroComputer = Math.floor(Math.random() * 5) + 1;
+
+
+
+function sommaNumeriFunzione (numeroUtente , numeroComputer) {
+    return numeroComputer += numeroUtente
+}
+
+const sommaNumeri = sommaNumeriFunzione (numeroUtente , numeroComputer)
+console.log(numeroComputer);
+console.log(sommaNumeri);
