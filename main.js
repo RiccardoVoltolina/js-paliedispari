@@ -103,15 +103,19 @@ if (sceltaUtente === 'pari' && pariOdispari === 'pari') {
 -la metto nella funzione
 */
 
-let sceltaParola = prompt ('scegli una parola');
-let containerSceltaParola = ''
+let parola = prompt ('scegli una parola');
+/* uso la proprietà split per dividere la mia parola in lettere */
+let parolaDivisa = parola.split('');
+/* uso la proprietà reverse per invertire l' ordine delle lettere */
+parolaDivisa = parolaDivisa.reverse();
+/* uso la proprietà join per riunire le lettere precedentemente divise, tenendole invertite */
+let parolaInvertita = parolaDivisa.join('');
 
 
-for (let i = 0; i < sceltaParola.length; i++) {
-    sceltaParola[i]
-    containerSceltaParola += sceltaParola[i]
-    console.log(containerSceltaParola);
-    
-}
+if(parola == parolaInvertita){
+    console.log('la parola è palindroma');
+  } else {
+    console.log('la parola non è palindroma');
+  }
 
 
