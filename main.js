@@ -36,7 +36,7 @@ non partiamo a bomba con la scrittura delle funzioni, ma prima scriviamo la logi
 
 */
 
-let sceltaUtente = prompt ('Preferisci pari o dispari?');
+/* let sceltaUtente = prompt ('Preferisci pari o dispari?');
 
 if (sceltaUtente !== 'pari' && sceltaUtente !== 'dispari') {
     alert ('scegli un valore valido');
@@ -90,5 +90,28 @@ if (sceltaUtente === 'pari' && pariOdispari === 'pari') {
 
 
 
+
+
+ */
+
+
+/* esercizio palindromo */
+
+/* 
+-chiediamo all' utente una parola con un prompt 
+-verifico se la parola è palindroma
+-la metto nella funzione
+*/
+
+let sceltaParola = prompt ('scegli una parola');
+let containerSceltaParola = ''
+
+
+for (let i = 0; i < sceltaParola.length; i++) {
+    sceltaParola[i]
+    containerSceltaParola += sceltaParola[i]
+    console.log(containerSceltaParola);
+    
+}
 
 
