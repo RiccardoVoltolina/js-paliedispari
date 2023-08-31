@@ -41,6 +41,7 @@ let sceltaUtente = prompt ('Preferisci pari o dispari?');
 if (sceltaUtente !== 'pari' && sceltaUtente !== 'dispari') {
     alert ('scegli un valore valido');
 }
+
 let numeroUtente = Number (prompt ('Scegli un numero compreso tra 1 e 5'));
 
 if (numeroUtente < 1 || numeroUtente > 5) {
@@ -67,8 +68,27 @@ function pariDispari(sommaNumeri) {
     }
 }
 
+let pariOdispari;
+
 if (pariDispari (sommaNumeri)) {
-    console.log('il numero è pari');
+    console.log('il risultato è pari');
+    pariOdispari = 'pari'
+
 } else {
-    console.log('il numero è dispari');
+    console.log('il risultato è dispari');
+    pariOdispari = 'dispari'
 }
+
+
+if (sceltaUtente === 'pari' && pariOdispari === 'pari') {
+    console.log('Congratulazioni, il risultato che hai scelto è pari come avevi previsto');
+} else if (sceltaUtente === 'dispari' && pariOdispari === 'dispari') {
+    console.log('Congratulazioni, il risultato che hai scelto è dispari come avevi previsto');
+} else {
+    console.log('Mi dispiace ma questa volta il risultato che è uscito è diverso da quello che hai scelto, perchè è ' + pariOdispari);
+}
+
+
+
+
+
