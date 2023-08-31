@@ -58,3 +58,17 @@ function sommaNumeriFunzione (numeroUtente , numeroComputer) {
 const sommaNumeri = sommaNumeriFunzione (numeroUtente , numeroComputer)
 console.log(numeroComputer);
 console.log(sommaNumeri);
+
+function pariDispari(sommaNumeri) {
+    if (sommaNumeri % 2 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+if (pariDispari (sommaNumeri)) {
+    console.log('il numero è pari');
+} else {
+    console.log('il numero è dispari');
+}
