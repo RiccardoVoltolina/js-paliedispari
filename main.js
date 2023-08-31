@@ -111,11 +111,24 @@ parolaDivisa = parolaDivisa.reverse();
 /* uso la proprietà join per riunire le lettere precedentemente divise, tenendole invertite */
 let parolaInvertita = parolaDivisa.join('');
 
+function parolaPalindroma(parola , parolaInvertita) {
+    if(parola == parolaInvertita){
+        return true
+      } else {
+        return false
+      }
+}
 
-if(parola == parolaInvertita){
+if (parolaPalindroma (parola , parolaInvertita) === true) {
     console.log('la parola è palindroma');
-  } else {
+} else {
     console.log('la parola non è palindroma');
-  }
+}
+
+
+
+
+
+
 
 
